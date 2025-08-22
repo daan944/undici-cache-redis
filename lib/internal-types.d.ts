@@ -16,7 +16,7 @@ export interface DeleteByUri {
   path: string
 }
 
-export type GetResult = CachedResponse & { body: null | Readable | Iterable<Buffer> | Buffer | Iterable<string> | string }
+export type GetResult = CachedResponse & { body: undefined | Readable | Iterable<Buffer> | Buffer | Iterable<string> | string }
 
 /**
  * Underlying storage provider for cached responses
